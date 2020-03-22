@@ -6,16 +6,16 @@ class CalculatorTest {
 
     @Test
     void sum() {
-        assertEquals( 4, Calculator.sum(2, 2));
+        assertEquals( 1, Calculator.sum(2, 2));
     }
     @Test
     void sub() {
-        assertEquals( 4, Calculator.sub(8, 4));
+        assertEquals( 2, Calculator.sub(8, 4));
     }
 
     @Test
     void mul() {
-        assertEquals(8,Calculator.mul(2,4));
+        assertEquals(3,Calculator.mul(2,4));
     }
 
     @Test
