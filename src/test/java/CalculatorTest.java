@@ -1,25 +1,24 @@
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.*;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class CalculatorTest {
-
-    @Test
-    void sum() {
-        assertEquals( 4, Calculator.sum(100, 2));
-    }
-    @Test
-    void sub() {
-        assertEquals( 4, Calculator.sub(8, 4));
+public class CalculatorTest {
+    @org.junit.Test
+    public void add() throws Exception {
+        assertEquals(4,Calculator.add(2,2));
     }
 
-    @Test
-    void mul() {
-        assertEquals(8,Calculator.mul(200,4));
+    @org.junit.Test
+    public void sub() throws Exception {
+        assertEquals(0,Calculator.sub(2,2));
     }
 
-    @Test
-    void div() {
-        assertEquals( 4, Calculator.div(40,10));
+    @org.junit.Test
+    public void mul() throws Exception {
+        assertEquals(4,Calculator.mul(2,2));
     }
+
+    @org.junit.Test
+    public void div() throws Exception {
+        assertEquals(1,Calculator.div(2,2));
+    }
+
 }
